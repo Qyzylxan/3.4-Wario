@@ -33,6 +33,10 @@ namespace LearnGame.Shooting
         }
         public void SetWeapon(Weapon weaponPrefab, Transform hand)
         {
+            // Уничтожение старого оружия
+            if (_weapon != null) { 
+                Destroy(_weapon.gameObject);
+            }
             _weapon = Instantiate(weaponPrefab, hand);
             _weapon.transform.localPosition = Vector3.zero;
             _weapon.transform.localRotation = Quaternion.identity;

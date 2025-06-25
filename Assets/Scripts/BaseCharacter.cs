@@ -1,5 +1,6 @@
 
 using LearnGame.Movement;
+using LearnGame.PickUp;
 using LearnGame.Shooting;
 using UnityEngine;
 
@@ -54,7 +55,7 @@ namespace LearnGame
 
         protected void OnTriggerEnter(Collider other)
         {
-            if (LayerUtils.IsBullet(other.gameObject)) 
+            if (LayerUtils.IsBullet(other.gameObject))
             {
                 var bullet = other.gameObject.GetComponent<Bullet>();
 
@@ -62,6 +63,14 @@ namespace LearnGame
 
                 Destroy(other.gameObject);
             }
+            else if (LayerUtils.IsPickUp(other.gameObject)) 
+            {
+                var pickUp = other.gameObject.GetComponent<PickUpWeapon>();
+                _shootingController.SetWeapon(pickUp.WeaponPrefab, _hand);
+
+                Destroy(other.gameObject);
+            }
+
         }
 
     }
