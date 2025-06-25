@@ -44,16 +44,18 @@ namespace LearnGame.Shooting
 
             var position = _weapon.transform.position;
             var radius = _weapon.ShootRadius;
-            var mask = LayerUtils.EnemyMask;
+            //Debug.Log("gameObject: " + gameObject);
+            var mask = LayerUtils.EnemyMask; 
 
             var size = Physics.OverlapSphereNonAlloc(position, radius, _colliders, mask);
-
             if (size > 0)
             {
                 for (int i = 0; i < size; i++)
                 {
+                    // Если не отключить Box Collider у Face, то Враг (Enemy) будет беситься на своё же лицо (Face - дочерний объект).
                     if (_colliders[i].gameObject != gameObject)
                     {
+                        //Debug.Log(_colliders[i].gameObject + " != " + gameObject);
                         target = _colliders[i].gameObject;
                         break;
                     }

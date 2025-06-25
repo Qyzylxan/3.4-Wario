@@ -28,6 +28,7 @@ namespace Assets.Scripts.Camera
 
             transform.position = _player.transform.position + _followCameraOffset;
             transform.rotation = Quaternion.LookRotation(targetRotation, Vector3.up);
+
         }
     }
 }

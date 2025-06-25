@@ -442,11 +442,6 @@ MonoBehaviour:
   _followCameraOffset: {x: -10, y: 5, z: 0}
   _rotationOffset: {x: 0, y: 0, z: 0}
   _player: {fileID: 383835746}
---- !u!4 &1427425164 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2860370147829165802, guid: 3cd2e97aea1c1214a98dc80d04118d0c, type: 3}
-  m_PrefabInstance: {fileID: 4369680292924933680}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2619215691497197328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -516,14 +511,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 2876676600893079398, guid: 3cd2e97aea1c1214a98dc80d04118d0c, type: 3}
-      propertyPath: _hand
-      value: 
-      objectReference: {fileID: 1427425164}
-    - target: {fileID: 2876676600893079398, guid: 3cd2e97aea1c1214a98dc80d04118d0c, type: 3}
-      propertyPath: _baseWeaponPrefab
-      value: 
-      objectReference: {fileID: 8961718304912176611, guid: 9bfba19fd9378b04fa161ac361e388e8, type: 3}
+    - target: {fileID: 3984399416462344685, guid: 3cd2e97aea1c1214a98dc80d04118d0c, type: 3}
+      propertyPath: m_Name
+      value: Face_enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3984399416462344685, guid: 3cd2e97aea1c1214a98dc80d04118d0c, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -576,6 +567,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5923261577726921256, guid: 3cd2e97aea1c1214a98dc80d04118d0c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -600,6 +595,10 @@ PrefabInstance:
     - target: {fileID: 1111542918210940079, guid: 12a440d4bf5efd24f91f3da3db500cc4, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3854643660879972400, guid: 12a440d4bf5efd24f91f3da3db500cc4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4566235935586897487, guid: 12a440d4bf5efd24f91f3da3db500cc4, type: 3}
       propertyPath: m_Layer

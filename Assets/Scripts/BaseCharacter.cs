@@ -16,7 +16,7 @@ namespace LearnGame
         private Transform _hand;
 
         [SerializeField]
-        private float _health = 2f;
+        private float _health = 10f;
 
         private IMovementDirectionSource _movementDirectionSource;
 

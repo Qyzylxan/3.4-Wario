@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2860370147829165802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,11 +147,11 @@ GameObject:
   - component: {fileID: 5152958068925682569}
   - component: {fileID: 6049960683692514063}
   - component: {fileID: 4656932669064150032}
-  - component: {fileID: 2331846102632156497}
-  - component: {fileID: 4744181988935480563}
-  - component: {fileID: 888681597568630082}
-  - component: {fileID: 2366456401916539314}
-  - component: {fileID: 2876676600893079398}
+  - component: {fileID: 2297308428229485173}
+  - component: {fileID: 9188425767598541698}
+  - component: {fileID: 3484727761806005147}
+  - component: {fileID: 6648846913555934939}
+  - component: {fileID: 2419227944670749213}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -226,7 +226,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2331846102632156497
+--- !u!114 &2297308428229485173
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e1e8503db01a1f48af6a789e0736c43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!143 &4744181988935480563
+--- !u!143 &9188425767598541698
 CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -264,7 +264,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &888681597568630082
+--- !u!114 &3484727761806005147
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -278,7 +278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 5
   _maxRadiansDelta: 30
---- !u!114 &2366456401916539314
+--- !u!114 &6648846913555934939
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97cbd0a9920f1a4cb67209de9e14239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2876676600893079398
+--- !u!114 &2419227944670749213
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
